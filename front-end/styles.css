@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body {
+    font-family: 'Afac Flux', sans-serif;
+    background-color: rgb(70, 70, 70);
+}
+
+aside{
+    background-color: rgb(222, 119, 119);
+    font-family: 'Afac Flux', sans-serif;
+    float: right;
+    width: 300px;
+    height: 100%;
+}
+
+/* Nav Bar */
+
+#mainnavbar {
+    overflow: auto;
+    background-color: rgb(135, 129, 129);
+}
+
+#mainnavbar a {
+    color:rgb(213, 202, 202);
+}
+
+#navbar {
+    background: rgb(244, 202, 202);
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar a {
+    color: #fff;
+    font-family: 'Afac Flux', sans-serif;
+}
+
+#mainnavbar .logo,
+#navbar .logo {
+    float:left;
+    padding-top: 30px;
+    font-size: 28px;
+    text-transform: lowercase;
+}
+
+#mainnavbar ul,
+#navbar ul {
+    list-style: none;
+    float: right;
+    text-transform: uppercase;
+}
+
+#mainnavbar ul li,
+#navbar ul li {
+    float:left;
+}
+
+#mainnavbar ul li a,
+#navbar ul li a{
+    display: block;
+    padding: 40px 30px;
+    text-align:center;
+}
+
+#mainnavbar ul li a:hover {
+    background: rgb(200, 52, 52);
+    color: #f6e1e1;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: rgb(149, 0, 0);
+    color: #fff;
+}
+
+/* Box to display modules in a row*/
+.home-box {
+    float:left;
+    width: 33%;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.home-box img {
+    width: 50%;
+    padding: 20px;
+}
+
+
