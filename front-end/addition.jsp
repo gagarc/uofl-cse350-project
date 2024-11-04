@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head> <!-- Name of tab -->
@@ -33,11 +34,16 @@
 <main>
     <div>
         <h1> Practice Problems </h1>
-        <div>
-            <p> Question goes here </p>
-            <input type="text" placeholder="Enter your answer">
-            <button type="submit"> Submit </button>
-        </div>
+        <form action="problemServlet" method="post">
+            <p><strong>Question:</strong> ${questionText}</p>
+
+            <input type="text" name="answer" placeholder="Enter your answer" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <c:if test="${not empty resultMessage}">
+            <p class="result">${resultMessage}</p>
+        </c:if>
     </div>
 
     <aside> <!-- Menu on the side -->
