@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="add home and addition html files + css file">
-      <change afterPath="$PROJECT_DIR$/front-end/askprofessor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/addition.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/addition.html" afterDir="false" />
-    </list>
+    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="creation of box and button for addition questions" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728693629887</updated>
       <workItem from="1728693632432" duration="3882000" />
-      <workItem from="1730736680542" duration="479000" />
+      <workItem from="1730736680542" duration="526000" />
     </task>
     <task id="LOCAL-00001" summary="add home and addition html files + css file">
       <option name="closed" value="true" />
@@ -93,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728697479188</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="creation of box and button for addition questions">
+      <option name="closed" value="true" />
+      <created>1730737210863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730737210863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add home and addition html files + css file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add home and addition html files + css file" />
+    <MESSAGE value="creation of box and button for addition questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation of box and button for addition questions" />
   </component>
 </project>
