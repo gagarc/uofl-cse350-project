@@ -10,7 +10,7 @@ public class QuizServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        String jsonFilePath = getServletContext().getRealPath("/WEB-INF/questions.json");
+        String jsonFilePath = getServletContext().getRealPath("/datasets/addition.json");
         String jsonData = jsonParser.getJSONFromFile(jsonFilePath);
         questionAnswerList = jsonParser.parseJsonToList(jsonData);
     }
@@ -25,7 +25,7 @@ public class QuizServlet extends HttpServlet {
         request.setAttribute("correctAnswer", currentQuestion.getAnswer());
 
         // Forward to the JSP
-        RequestDispatcher dispatcher = request.getRequestDispatcher("quiz.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("addition.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -46,7 +46,7 @@ public class QuizServlet extends HttpServlet {
         request.setAttribute("resultMessage", resultMessage);
 
         // Forward back to the JSP
-        RequestDispatcher dispatcher = request.getRequestDispatcher("quiz.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("addition.jsp");
         dispatcher.forward(request, response);
     }
 }

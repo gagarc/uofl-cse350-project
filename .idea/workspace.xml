@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="creation of box and button for addition questions">
-      <change afterPath="$PROJECT_DIR$/front-end/addition.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/problemServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/questionAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/addition.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/addition.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/jsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/jsonParser.java" afterDir="false" />
-    </list>
+    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="connect java and html with jsp for addition practice problems" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +80,7 @@
       <updated>1728693629887</updated>
       <workItem from="1728693632432" duration="3882000" />
       <workItem from="1730736680542" duration="526000" />
-      <workItem from="1730737293294" duration="1479000" />
+      <workItem from="1730737293294" duration="1593000" />
     </task>
     <task id="LOCAL-00001" summary="add home and addition html files + css file">
       <option name="closed" value="true" />
@@ -113,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730737538118</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="connect java and html with jsp for addition practice problems">
+      <option name="closed" value="true" />
+      <created>1730738868826</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730738868826</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +131,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/production" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -145,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add home and addition html files + css file" />
     <MESSAGE value="creation of box and button for addition questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation of box and button for addition questions" />
+    <MESSAGE value="connect java and html with jsp for addition practice problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect java and html with jsp for addition practice problems" />
   </component>
 </project>
