@@ -34,7 +34,7 @@ public class jsonParser {
         System.out.println("\"question\": \"" + randomPair.getQuestion() + "\", \"answer\": \"" + randomPair.getAnswer() + "\"");
     }
 
-    public static ArrayList<QuestionAnswer> parseJsonToList(String jsonText) {
+    private static ArrayList<QuestionAnswer> parseJsonToList(String jsonText) {
         ArrayList<QuestionAnswer> questionAnswerList = new ArrayList<>();
 
         jsonText = jsonText.substring(1, jsonText.length() - 1);
@@ -64,3 +64,20 @@ public class jsonParser {
     }
 }
 
+class QuestionAnswer {
+    private final String question;
+    private final String answer;
+
+    public QuestionAnswer(String question, String answer) {
+        this.question = question;
+        this.answer = answer;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+}
