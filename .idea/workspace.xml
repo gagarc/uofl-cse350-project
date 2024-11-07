@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="update path" />
+    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="update path">
+      <change afterPath="$PROJECT_DIR$/front-end/addition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/addnotes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/add_line1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/add_line2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/add_line3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/add_placevalue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/addition_balls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/addition_fingers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/addition.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/randomQuestionPair.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -37,18 +50,24 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2nJaRZyUBdgfAaOzjWfIEWSMEzi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.addnotes.html.executor": "Run",
     "JavaScript Debug.home.html.executor": "Run",
+    "JavaScript Debug.randomQuestionPair.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Usuario/IdeaProjects/uofl-cse350-project/front-end",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,6 +78,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\IdeaProjects\uofl-cse350-project\front-end" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\IdeaProjects\uofl-cse350-project\front-end" />
     </key>
@@ -82,7 +104,9 @@
       <workItem from="1728693632432" duration="3882000" />
       <workItem from="1730736680542" duration="526000" />
       <workItem from="1730737293294" duration="1593000" />
-      <workItem from="1730758031405" duration="273000" />
+      <workItem from="1730758031405" duration="1041000" />
+      <workItem from="1730931787775" duration="1603000" />
+      <workItem from="1731007713148" duration="4387000" />
     </task>
     <task id="LOCAL-00001" summary="add home and addition html files + css file">
       <option name="closed" value="true" />
@@ -124,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730758158556</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update path">
+      <option name="closed" value="true" />
+      <created>1730758356162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730758356162</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,9 +186,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add home and addition html files + css file" />
     <MESSAGE value="creation of box and button for addition questions" />
     <MESSAGE value="connect java and html with jsp for addition practice problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="connect java and html with jsp for addition practice problems" />
+    <MESSAGE value="update path" />
+    <option name="LAST_COMMIT_MESSAGE" value="update path" />
   </component>
 </project>

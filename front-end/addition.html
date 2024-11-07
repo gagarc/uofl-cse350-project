@@ -1,4 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head> <!-- Name of tab -->
@@ -6,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!--Link to the .css file-->
-    <title> Cool Math Games | Addition </title>
+    <title> Cool Math Games | Addition</title>
 </head>
 
 <body>
 <header id="mainheader">
-    <h1><a href="index.html"> coolmathgames.com </a></h1> <!-- href is used to link -->
+    <h1><a href="index.html"> coolmathgames.com</a></h1> <!-- href is used to link -->
 </header>
 
 <nav id="mainnavbar">     <!--Horizontal navigation bar-->
@@ -32,33 +31,37 @@
 
 
 <main>
-    <div>
-        <h1> Practice Problems </h1>
-        <form action="problemServlet" method="post">
-            <p><strong>Question:</strong> ${questionText}</p>
-
-            <input type="text" name="answer" placeholder="Enter your answer" required>
-            <button type="submit">Submit</button>
-        </form>
-
-        <c:if test="${not empty resultMessage}">
-            <p class="result">${resultMessage}</p>
-        </c:if>
+    <div> <!--Tag used to create a section and divide the structure in "boxes"-->
+        <p>
+            QUESTION OF THE DAY
+        </p>
     </div>
 
-    <aside> <!-- Menu on the side -->
-        <p>
-        <ol>
-            <li> item </li>
-            <li> item </li>
-            <li> item </li>
-        </ol>
-        </p>
-    </aside>
+    <div>
+        <h1 id="question"></h1>
+        <p id="answer"></p>
+        <button onclick="displayRandomQA()"> Get Another </button>
+    </div>
+
+    <script src="script.js"></script>
+
 </main>
+</body>
+
+<aside> <!-- Menu on the side -->
+    <p>
+    <ol>
+        <h2> Lecture Notes </h2>
+        <li><a href="addnotes.html"></a> Addition </li>
+        <li> Subtraction </li>
+        <li> Multiplication </li>
+        <li> Division </li>
+    </ol>
+    </p>
+</aside>
 
 <footer>
     <p> CONTACT US </p>
 </footer>
-</body>
+
 </html>
