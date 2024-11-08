@@ -14,12 +14,17 @@
             margin: 0;
             text-align: center;
         }
+        #qa-container {
+            max-width: 300px;
+        }
     </style>
 </head>
 <body>
     <div id="qa-container">
         <h2 id="question"></h2>
-        <p id="answer"></p>
+        <input type="number" id="user-answer" placeholder="Enter your answer" />
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="feedback"></p>
         <button onclick="displayRandomQA()">Get Another</button>
     </div>
 

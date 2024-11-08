@@ -1,5 +1,6 @@
 // Initialize an empty array to hold the question-answer pairs
 let questionAnswerList = [];
+let currentAnswer = null; // Holds the correct answer for the current question
 
 // Fetch JSON data
 fetch("datasets/addition.json")
@@ -18,7 +19,23 @@ function displayRandomQA() {
     const randomIndex = Math.floor(Math.random() * questionAnswerList.length);
     const { question, answer } = questionAnswerList[randomIndex];
 
-    // Display the question and answer in the HTML
+    // Update the current answer
+    currentAnswer = answer;
+
+    // Display the question and clear previous feedback/input
     document.getElementById("question").textContent = `Q: ${question}`;
-    document.getElementById("answer").textContent = `A: ${answer}`;
+    document.getElementById("user-answer").value = "";
+    document.getElementById("feedback").textContent = "";
+}
+
+// Check the user’s answer
+function checkAnswer() {
+    const userAnswer = parseInt(document.getElementById("user-answer").value, 10);
+
+    // Display feedback
+    if (userAnswer === currentAnswer) {
+        document.getElementById("feedback").textContent = "Correct!";
+    } else {
+        document.getElementById("feedback").textContent = `Incorrect. The correct answer is ${currentAnswer}.`;
+    }
 }
