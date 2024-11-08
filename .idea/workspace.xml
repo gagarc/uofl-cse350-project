@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="update path">
-      <change afterPath="$PROJECT_DIR$/front-end/addition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/addnotes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/img/add_line1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/img/add_line2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/img/add_line3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/img/add_placevalue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/img/addition_balls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/img/addition_fingers.png" afterDir="false" />
+    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="first draft addition notes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/addition.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/randomQuestionPair.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +50,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.addition.html.executor": "Run",
     "JavaScript Debug.addnotes.html.executor": "Run",
     "JavaScript Debug.home.html.executor": "Run",
     "JavaScript Debug.randomQuestionPair.html.executor": "Run",
@@ -106,7 +96,8 @@
       <workItem from="1730737293294" duration="1593000" />
       <workItem from="1730758031405" duration="1041000" />
       <workItem from="1730931787775" duration="1603000" />
-      <workItem from="1731007713148" duration="4387000" />
+      <workItem from="1731007713148" duration="4466000" />
+      <workItem from="1731078783310" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="add home and addition html files + css file">
       <option name="closed" value="true" />
@@ -156,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730758356162</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first draft addition notes">
+      <option name="closed" value="true" />
+      <created>1731012205910</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731012205910</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +190,7 @@
     <MESSAGE value="creation of box and button for addition questions" />
     <MESSAGE value="connect java and html with jsp for addition practice problems" />
     <MESSAGE value="update path" />
-    <option name="LAST_COMMIT_MESSAGE" value="update path" />
+    <MESSAGE value="first draft addition notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="first draft addition notes" />
   </component>
 </project>
