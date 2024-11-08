@@ -30,10 +30,11 @@ function displayRandomQA() {
 
 // Check the user’s answer
 function checkAnswer() {
-    const userAnswer = parseInt(document.getElementById("user-answer").value, 10);
+    const userAnswer = parseInt(document.getElementById("user-answer").value.trim(), 10);
+    const correctAnswer = parseInt(currentAnswer, 10);
 
     // Display feedback
-    if (userAnswer === currentAnswer) {
+    if (userAnswer === correctAnswer) {
         document.getElementById("feedback").textContent = "Correct!";
     } else {
         document.getElementById("feedback").textContent = `Incorrect. The correct answer is ${currentAnswer}.`;
