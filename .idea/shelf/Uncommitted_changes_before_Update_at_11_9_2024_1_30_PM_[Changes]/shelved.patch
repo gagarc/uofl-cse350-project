@@ -1,0 +1,603 @@
+Index: front-end/home.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head> <!-- Name of tab -->\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link rel=\"stylesheet\" href=\"styles.css\"> <!--Link to the .css file-->\r\n    <title> Cool Math Games </title>\r\n</head>\r\n\r\n<body>\r\n<header id=\"mainheader\">\r\n    <h1><a href=\"index.html\"> coolmathgames.com</a></h1> <!-- href is used to link -->\r\n</header>\r\n\r\n<nav id=\"mainnavbar\">     <!--Horizontal navigation bar-->\r\n    <!--List of elements-->\r\n    <ul>\r\n        <li><a href=\"askprofessor.html\"> Ask Professor </a></li>\r\n        <li><a href=\"practice.html\"> Practice </a></li>\r\n        <li><a href=\"calculator.html\"> Calculator </a></li>\r\n        <li><a href=\"quiz.html\"> Quiz </a></li>\r\n    </ul>\r\n\r\n    <!--Search bar-->\r\n    <form>\r\n        <input type=\"search\" name=\"q\" placeholder=\"Search\" />\r\n        <input type=\"submit\" value=\"Find\" />\r\n    </form>\r\n</nav>\r\n\r\n\r\n<main>\r\n    <div> <!--Tag used to create a section and divide the structure in \"boxes\"-->\r\n        <p>\r\n            QUESTION OF THE DAY\r\n        </p>\r\n    </div>\r\n\r\n    <div class=\"home-row\">      <!--Class refers to the .css file -->\r\n\r\n        <div class=\"home-box\">\r\n            <img src=\"img/addition_sign.png\"\r\n                 height=\"150px\"\r\n                 width=\"100px\"> <!-- img is used for images -->\r\n            <h2><a href=\"addition.html\"> Addition </a></h2>\r\n        </div>\r\n\r\n        <div class=\"home-box\">\r\n            <img src=\"img/subtraction_sign.png\"\r\n                 height=\"150px\"\r\n                 width=\"100px\">\r\n            <h2><a href=\"subtraction.html\"> Subtraction </a></h2>\r\n        </div>\r\n\r\n        <div class=\"home-box\">\r\n            <img src=\"img/multiplication_sign.png\"\r\n                 height=\"150px\"\r\n                 width=\"100px\">\r\n            <h2><a href=\"multiplication.html\"> Multiplication </a></h2>\r\n        </div>\r\n\r\n        <div class=\"home-box\">\r\n            <img src=\"img/division_sign.png\"\r\n                 height=\"150px\"\r\n                 width=\"100px\">\r\n            <h2><a href=\"division.html\"> Division </a></h2>\r\n        </div>\r\n    </div>\r\n\r\n</main>\r\n</body>\r\n\r\n<aside> <!-- Menu on the side -->\r\n    <p>\r\n    <ol>\r\n        <h2> Lecture Notes </h2>\r\n        <li><a href=\"addnotes.html\"></a>Addition </li>\r\n        <li> Subtraction </li>\r\n        <li> Multiplication </li>\r\n        <li> Division </li>\r\n    </ol>\r\n    </p>\r\n</aside>\r\n\r\n<footer>\r\n    <p> CONTACT US </p>\r\n</footer>\r\n\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/front-end/home.html b/front-end/home.html
+--- a/front-end/home.html	(revision ca35d4d52b7a6c9ee82d665a9de5858125829268)
++++ b/front-end/home.html	(date 1731176997102)
+@@ -5,83 +5,76 @@
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css"> <!--Link to the .css file-->
+-    <title> Cool Math Games </title>
++    <title> Louie Learn Math </title>
+ </head>
+ 
+ <body>
+-<header id="mainheader">
+-    <h1><a href="index.html"> coolmathgames.com</a></h1> <!-- href is used to link -->
+-</header>
++<div class="main">
++    <div class="navbar">
++        <div class="icon">
++            <img src="img/logo.png" height="75px" width="75px">
++            <div class="logo"> Louie Learns Math</div>
++        </div>
+ 
+-<nav id="mainnavbar">     <!--Horizontal navigation bar-->
+-    <!--List of elements-->
+-    <ul>
+-        <li><a href="askprofessor.html"> Ask Professor </a></li>
+-        <li><a href="practice.html"> Practice </a></li>
+-        <li><a href="calculator.html"> Calculator </a></li>
+-        <li><a href="quiz.html"> Quiz </a></li>
+-    </ul>
++        <div class="menu">
++            <ul>
++                <li><a href="home.html">HOME</a></li>
++                <li><a href="Calculator.html">CALCULATOR</a></li>
++                <li>
++                    <a href="#">LECTURES</a>
++                    <ul class="dropdown">
++                        <li><a href="addnotes.html"> ADDITION</a></li>
++                        <li><a href="subnotes.html"> SUBTRACTION</a></li>
++                        <li><a href="mulnotes.html"> MULTIPLICATION</a></li>
++                        <li><a href="divnotes.html"> DIVISION</a></li>
++                    </ul>
++                </li>
++                <li>
++                    <a href="#">PRACTICE</a>
++                    <ul class="dropdown">
++                        <li><a href="addition.html"> ADDITION</a></li>
++                        <li><a href="subtraction.html"> SUBTRACTION</a></li>
++                        <li><a href="multiplication.html"> MULTIPLICATION</a></li>
++                        <li><a href="division.html"> DIVISION</a></li>
++                    </ul>
++                </li>
++                <li><a href="quiz.html">QUIZ</a></li>
++                <li><a href="aboutus.html">ABOUT US</a></li>
++            </ul>
+ 
+-    <!--Search bar-->
+-    <form>
+-        <input type="search" name="q" placeholder="Search" />
+-        <input type="submit" value="Find" />
+-    </form>
+-</nav>
+ 
+-
+-<main>
+-    <div> <!--Tag used to create a section and divide the structure in "boxes"-->
+-        <p>
+-            QUESTION OF THE DAY
+-        </p>
+-    </div>
++        </div>
+ 
+-    <div class="home-row">      <!--Class refers to the .css file -->
+-
+-        <div class="home-box">
+-            <img src="img/addition_sign.png"
+-                 height="150px"
+-                 width="100px"> <!-- img is used for images -->
+-            <h2><a href="addition.html"> Addition </a></h2>
++        <div class="search">
++            <input class="srch" type="search" name="" placeholder="Search...">
++            <a href="#"> <button class="btn"> Search </button> </a>
+         </div>
+ 
+-        <div class="home-box">
+-            <img src="img/subtraction_sign.png"
+-                 height="150px"
+-                 width="100px">
+-            <h2><a href="subtraction.html"> Subtraction </a></h2>
+-        </div>
++    </div>
+ 
+-        <div class="home-box">
+-            <img src="img/multiplication_sign.png"
+-                 height="150px"
+-                 width="100px">
+-            <h2><a href="multiplication.html"> Multiplication </a></h2>
++    <div class="content">
++        <h1>Learn math with <br><span>Louie the Cardinal</span></h1>
++        <p class="par">Welcome to Louie Learns Math! Sharpen yout math skills with Louie<br>
++            the Cardinal, the Univerisity of Louisville mascot. This educational <br>
++            e-learn platform will allow middle schoolers to practice addition, <br>
++            subtraction, division and multiplication.
++        </p>
++
++        <div class="form">
++            <h2>QUESTION OF THE DAY</h2>
++            <p id="question"></p>
++            <input name="" placeholder="Enter Your Answer Here">
++            <button class="btnn" onclick="displayRandomQA()"><a href="#">Check Answer</a></button>
++
+         </div>
+ 
+-        <div class="home-box">
+-            <img src="img/division_sign.png"
+-                 height="150px"
+-                 width="100px">
+-            <h2><a href="division.html"> Division </a></h2>
+-        </div>
+-    </div>
+-
+-</main>
++        <script src="script.js"></script>
++    </div>
++
++
++</div>
+ </body>
+ 
+-<aside> <!-- Menu on the side -->
+-    <p>
+-    <ol>
+-        <h2> Lecture Notes </h2>
+-        <li><a href="addnotes.html"></a>Addition </li>
+-        <li> Subtraction </li>
+-        <li> Multiplication </li>
+-        <li> Division </li>
+-    </ol>
+-    </p>
+-</aside>
+ 
+ <footer>
+     <p> CONTACT US </p>
+Index: front-end/styles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');\r\n\r\nbody {\r\n    font-family: 'Afac Flux', sans-serif;\r\n    background-color: rgb(70, 70, 70);\r\n}\r\n\r\naside{\r\n    background-color: rgb(222, 119, 119);\r\n    font-family: 'Afac Flux', sans-serif;\r\n    float: right;\r\n    width: 300px;\r\n    height: 100%;\r\n}\r\n\r\n/* Nav Bar */\r\n\r\n#mainnavbar {\r\n    overflow: auto;\r\n    background-color: rgb(135, 129, 129);\r\n}\r\n\r\n#mainnavbar a {\r\n    color:rgb(213, 202, 202);\r\n}\r\n\r\n#navbar {\r\n    background: rgb(244, 202, 202);\r\n    color: #fff;\r\n    overflow: auto;\r\n}\r\n\r\n#navbar a {\r\n    color: #fff;\r\n    font-family: 'Afac Flux', sans-serif;\r\n}\r\n\r\n#mainnavbar .logo,\r\n#navbar .logo {\r\n    float:left;\r\n    padding-top: 30px;\r\n    font-size: 28px;\r\n    text-transform: lowercase;\r\n}\r\n\r\n#mainnavbar ul,\r\n#navbar ul {\r\n    list-style: none;\r\n    float: right;\r\n    text-transform: uppercase;\r\n}\r\n\r\n#mainnavbar ul li,\r\n#navbar ul li {\r\n    float:left;\r\n}\r\n\r\n#mainnavbar ul li a,\r\n#navbar ul li a{\r\n    display: block;\r\n    padding: 40px 30px;\r\n    text-align:center;\r\n}\r\n\r\n#mainnavbar ul li a:hover {\r\n    background: rgb(200, 52, 52);\r\n    color: #f6e1e1;\r\n}\r\n\r\n#navbar ul li a:hover,\r\n#navbar ul li a.current {\r\n    background: rgb(149, 0, 0);\r\n    color: #fff;\r\n}\r\n\r\n/* Box to display modules in a row*/\r\n.home-box {\r\n    float:left;\r\n    width: 33%;\r\n    padding: 20px;\r\n    padding-bottom: 50px;\r\n}\r\n\r\n.home-box img {\r\n    width: 50%;\r\n    padding: 20px;\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/front-end/styles.css b/front-end/styles.css
+--- a/front-end/styles.css	(revision ca35d4d52b7a6c9ee82d665a9de5858125829268)
++++ b/front-end/styles.css	(date 1731176980926)
+@@ -1,89 +1,267 @@
+-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
++*{
++    margin: 0;
++    padding: 0;
++}
+ 
+-body {
+-    font-family: 'Afac Flux', sans-serif;
+-    background-color: rgb(70, 70, 70);
++.main{
++    width: 100%;
++    background: linear-gradient(to top, rgba(0, 0, 0, 0.7)50%,rgba(0,0,0,0.7)50%), url(img/louie.png);
++    background-position: center;
++    background-size: cover;
++    height: 100vh;
+ }
+ 
+-aside{
+-    background-color: rgb(222, 119, 119);
+-    font-family: 'Afac Flux', sans-serif;
+-    float: right;
++.navbar{
++    width: 100%;
++    height: 75px;
++    margin: auto;
++    background: linear-gradient(to top, rgba(0, 0, 0, 0.7)50%,rgba(0,0,0,0.7)50%);
++}
++
++.icon{
+     width: 300px;
+-    height: 100%;
+-}
+-
+-/* Nav Bar */
+-
+-#mainnavbar {
+-    overflow: auto;
+-    background-color: rgb(135, 129, 129);
+-}
+-
+-#mainnavbar a {
+-    color:rgb(213, 202, 202);
+-}
+-
+-#navbar {
+-    background: rgb(244, 202, 202);
+-    color: #fff;
+-    overflow: auto;
+-}
+-
+-#navbar a {
+-    color: #fff;
+-    font-family: 'Afac Flux', sans-serif;
+-}
+-
+-#mainnavbar .logo,
+-#navbar .logo {
+-    float:left;
+-    padding-top: 30px;
+-    font-size: 28px;
+-    text-transform: lowercase;
++    float: left;
++    height: 75px;
++    margin-left: 20px;
+ }
+ 
+-#mainnavbar ul,
+-#navbar ul {
+-    list-style: none;
+-    float: right;
+-    text-transform: uppercase;
++.logo{
++    color: rgb(184, 55, 55);
++    font-size: 20px;
++    font-family: Arial;
++    font-weight: bold;
++    float:right;
++    margin-top: 25px;
++}
++
++.menu{
++    width: 1000px;
++    float: left;
++    height: 70px;
++    padding-left: 200px;
+ }
+ 
+-#mainnavbar ul li,
+-#navbar ul li {
+-    float:left;
++ul{
++    display: flex;
++    float: left;
++    display: flex;
++    justify-content: flex-start;
++    align-items: center;
++}
++
++ul li{
++    list-style: none;
++    margin-left: 62px;
++    margin-top: 30px;
++    font-size: 14px;
++    position: relative;
+ }
+ 
+-#mainnavbar ul li a,
+-#navbar ul li a{
++ul li a{
++    text-decoration: none;
++    color: #fff;
++    font-family: Arial;
++    font-weight: bold;
++    transition: 0.4s ease-in-out;
+     display: block;
+-    padding: 40px 30px;
+-    text-align:center;
+ }
+ 
+-#mainnavbar ul li a:hover {
+-    background: rgb(200, 52, 52);
+-    color: #f6e1e1;
++ul li ul.dropdown {
++    position: absolute;
++    top: 100%;
++    left: 0;
++    background: rgba(0, 0, 0, 0.85);
++    display: none;
++    flex-direction: column;
++    padding: 10px 0;
++    border-radius: 5px;
+ }
+ 
+-#navbar ul li a:hover,
+-#navbar ul li a.current {
+-    background: rgb(149, 0, 0);
++ul li ul.dropdown li {
++    margin: 0;
++    padding: 5px 20px;
++
++}
++
++ul li ul.dropdown li a {
+     color: #fff;
++    font-size: 14px;
++}
++
++ul li:hover > ul.dropdown {
++    display: flex;
+ }
+ 
+-/* Box to display modules in a row*/
+-.home-box {
+-    float:left;
+-    width: 33%;
+-    padding: 20px;
+-    padding-bottom: 50px;
++
++ul li a:hover{
++    color: rgb(180, 74, 74);
++}
++
++ul li ul.dropdown li a:hover {
++    color: rgb(180, 74, 74);
++}
++
++.search{
++    width: 330px;
++    float: left;
++    margin-top: 0.3% ;
++}
++
++.srch{
++    font-family: 'Times New Roman';
++    width: 200px;
++    height: 40px;
++    background: white;
++    border: 1px solid rgb(184, 55, 55);
++    margin-top: 13px;
++    color: rgb(184, 55, 55);
++    border-right: none;
++    font-size: 16px;
++    float: left;
++    padding: 10px;
++    border-bottom-left-radius: 5px;
++    border-top-left-radius: 5px;
++}
++
++.btn{
++    width: 100px;
++    height: 40px;
++    background: rgb(184, 55, 55);
++    border: 2px solid rgb(184, 55, 55);
++    margin-top: 13px;
++    color: #fff;
++    font-size: 15px;
++    border-bottom-right-radius: 5px;
++    border-bottom-right-radius: 5px;
++    transition: 0.2s ease;
++    cursor: pointer;
++}
++
++.btn:hover{
++    color: rgb(255, 190, 190);
++}
++
++.btn:focus{
++    outline: none;
++}
++
++.srch:focus{
++    outline: none;
++}
++
++.content{
++    width: 1200px;
++    height: auto;
++    margin: auto;
++    color: #fff;
++    position: relative;
++}
++
++.content .par{
++    padding-left: 20px;
++    padding-bottom: 25px;
++    font-family: Arial;
++    letter-spacing: 1.2px;
++    line-height: 30px;
++}
++
++.content h1{
++    font-family: 'Times New Roman';
++    font-size: 50px;
++    padding-left: 20px;
++    margin-top: 9%;
++    letter-spacing: 2px;
++}
++
++.content span{
++    color: #fc6c6c;
++}
++
++
++.form{
++    width: 300px;
++    height: 275px;
++    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
++    position: absolute;
++    top: -20px;
++    left: 870px;
++    transform: translate(0%,-5%);
++    border-radius: 10px;
++    padding: 40px;
++}
++
++.form h2{
++    width: 270px;
++    font-family: Arial;
++    text-align: center;
++    color: rgb(184, 55, 55);
++    font-size: 23px;
++    background-color: #fff;
++    border-radius: 10px;
++    margin: 2px;
++    padding: 8px;
++}
++
++.form p{
++    width: 270px;
++    height: 35px;
++    background: transparent;
++    border-bottom: 1px solid white;
++    border-top: none;
++    border-right: none;
++    border-left: none;
++    color: #fff;
++    font-size: 15px;
++    letter-spacing: 1px;
++    margin-top: 30px;
++    font-family: sans-serif;
++}
++
++.form input{
++    width: 270px;
++    height: 35px;
++    background: transparent;
++    border-bottom: 1px solid rgb(184, 55, 55);
++    border-top: none;
++    border-right: none;
++    border-left: none;
++    color: #fff;
++    font-size: 15px;
++    letter-spacing: 1px;
++    margin-top: 30px;
++    font-family: sans-serif;
++}
++
++.form input:focus{
++    outline: none;
++}
++
++::placeholder{
++    color: rgb(212, 76, 76);
++    font-family: Arial;
+ }
+ 
+-.home-box img {
+-    width: 50%;
+-    padding: 20px;
++.btnn{
++    width: 270px;
++    height: 40px;
++    background: rgb(184, 55, 55);
++    border: none;
++    margin-top: 30px;
++    font-size: 18px;
++    border-radius: 10px;
++    cursor: pointer;
++    color: #fff;
++    transition: 0.4s ease;
++}
++.btnn:hover{
++    background: #fc6c6c;
++    color: #ff0000;
++}
++.btnn a{
++    text-decoration: none;
++    color: white;
++    font-weight: bold;
+ }
+ 
+ 
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"108600bc-64f2-43fa-b43f-ddc251460345\" name=\"Changes\" comment=\"first draft addition notes\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;acunsi&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/gagarc/uofl-cse350-project.git&quot;,\r\n    &quot;accountId&quot;: &quot;84f0ed3c-2052-4913-95da-c906e5b6fce0&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2nJaRZyUBdgfAaOzjWfIEWSMEzi\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"JavaScript Debug.addition.html.executor\": \"Run\",\r\n    \"JavaScript Debug.addnotes.html.executor\": \"Run\",\r\n    \"JavaScript Debug.home.html.executor\": \"Run\",\r\n    \"JavaScript Debug.randomQuestionPair.html.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"develop\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Usuario/IdeaProjects/uofl-cse350-project/front-end\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Usuario\\IdeaProjects\\uofl-cse350-project\\front-end\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Usuario\\IdeaProjects\\uofl-cse350-project\\front-end\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62\" />\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"108600bc-64f2-43fa-b43f-ddc251460345\" name=\"Changes\" comment=\"\" />\r\n      <created>1728693629887</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1728693629887</updated>\r\n      <workItem from=\"1728693632432\" duration=\"3882000\" />\r\n      <workItem from=\"1730736680542\" duration=\"526000\" />\r\n      <workItem from=\"1730737293294\" duration=\"1593000\" />\r\n      <workItem from=\"1730758031405\" duration=\"1041000\" />\r\n      <workItem from=\"1730931787775\" duration=\"1603000\" />\r\n      <workItem from=\"1731007713148\" duration=\"4466000\" />\r\n      <workItem from=\"1731078783310\" duration=\"338000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"add home and addition html files + css file\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1728697479188</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1728697479188</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"creation of box and button for addition questions\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730737210863</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730737210863</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"creation of box and button for addition questions\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730737538118</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730737538118</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"connect java and html with jsp for addition practice problems\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730738868826</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730738868826</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"update path\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730758158556</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730758158556</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"update path\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730758356162</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730758356162</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"first draft addition notes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1731012205910</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1731012205910</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"develop\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"add home and addition html files + css file\" />\r\n    <MESSAGE value=\"creation of box and button for addition questions\" />\r\n    <MESSAGE value=\"connect java and html with jsp for addition practice problems\" />\r\n    <MESSAGE value=\"update path\" />\r\n    <MESSAGE value=\"first draft addition notes\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"first draft addition notes\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ca35d4d52b7a6c9ee82d665a9de5858125829268)
++++ b/.idea/workspace.xml	(date 1731176973281)
+@@ -4,8 +4,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="first draft addition notes">
++    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="some images upload">
++      <change afterPath="$PROJECT_DIR$/front-end/img/louie.png" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/front-end/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/home.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/front-end/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/styles.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -46,27 +49,27 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "JavaScript Debug.addition.html.executor": "Run",
+-    "JavaScript Debug.addnotes.html.executor": "Run",
+-    "JavaScript Debug.home.html.executor": "Run",
+-    "JavaScript Debug.randomQuestionPair.html.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "develop",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/Usuario/IdeaProjects/uofl-cse350-project/front-end",
+-    "list.type.of.created.stylesheet": "CSS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;JavaScript Debug.addition.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.addnotes.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.home.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.randomQuestionPair.html.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/IdeaProjects/uofl-cse350-project/front-end&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\Usuario\IdeaProjects\uofl-cse350-project\front-end" />
+@@ -97,7 +100,9 @@
+       <workItem from="1730758031405" duration="1041000" />
+       <workItem from="1730931787775" duration="1603000" />
+       <workItem from="1731007713148" duration="4466000" />
+-      <workItem from="1731078783310" duration="338000" />
++      <workItem from="1731078783310" duration="1199000" />
++      <workItem from="1731080945689" duration="585000" />
++      <workItem from="1731161400803" duration="5792000" />
+     </task>
+     <task id="LOCAL-00001" summary="add home and addition html files + css file">
+       <option name="closed" value="true" />
+@@ -155,7 +160,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1731012205910</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="some images upload">
++      <option name="closed" value="true" />
++      <created>1731079242664</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1731079242664</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -191,6 +204,7 @@
+     <MESSAGE value="connect java and html with jsp for addition practice problems" />
+     <MESSAGE value="update path" />
+     <MESSAGE value="first draft addition notes" />
+-    <option name="LAST_COMMIT_MESSAGE" value="first draft addition notes" />
++    <MESSAGE value="some images upload" />
++    <option name="LAST_COMMIT_MESSAGE" value="some images upload" />
+   </component>
+ </project>
+\ No newline at end of file

@@ -5,65 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!--Link to the .css file-->
-    <title> Cool Math Games | Addition</title>
+    <title> Louie Learn Math </title>
 </head>
 
 <body>
-<header id="mainheader">
-    <h1><a href="home.html"> coolmathgames.com</a></h1> <!-- href is used to link -->
-</header>
+<div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <img src="img/logo.png" height="75px" width="75px">
+            <div class="logo"> Louie Learns Math</div>
+        </div>
 
-<nav id="mainnavbar">     <!--Horizontal navigation bar-->
-    <!--List of elements-->
-    <ul>
-        <li><a href="askprofessor.html"> Ask Professor </a></li>
-        <li><a href="practice.html"> Practice </a></li>
-        <li><a href="calculator.html"> Calculator </a></li>
-        <li><a href="quiz.html"> Quiz </a></li>
-    </ul>
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="Calculator.html">CALCULATOR</a></li>
+                <li>
+                    <a href="#">LECTURES</a>
+                    <ul class="dropdown">
+                        <li><a href="addnotes.html"> ADDITION</a></li>
+                        <li><a href="subnotes.html"> SUBTRACTION</a></li>
+                        <li><a href="mulnotes.html"> MULTIPLICATION</a></li>
+                        <li><a href="divnotes.html"> DIVISION</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PRACTICE</a>
+                    <ul class="dropdown">
+                        <li><a href="addition.html"> ADDITION</a></li>
+                        <li><a href="subtraction.html"> SUBTRACTION</a></li>
+                        <li><a href="multiplication.html"> MULTIPLICATION</a></li>
+                        <li><a href="division.html"> DIVISION</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">QUIZ</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
 
-    <!--Search bar-->
-    <form>
-        <input type="search" name="q" placeholder="Search" />
-        <input type="submit" value="Find" />
-    </form>
-</nav>
 
+        </div>
 
-<main>
-    <div> <!--Tag used to create a section and divide the structure in "boxes"-->
-        <p>
-            QUESTION OF THE DAY
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Search...">
+            <a href="#"> <button class="btn_search"> Search </button> </a>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <h1>Learn addition with <br><span>Louie the Cardinal</span></h1>
+        <p class="par">Welcome to Addition Practice Problems! After reading the lecture<br>
+            notes corresponding to this module, you learned the steps how to add 2 numbers. <br>
+            You are allowed to check your answers and generate as many questions as you <br>
+            need to practice and learn. Have fun!
         </p>
+
+        <div class="form" id="qa-container">
+            <h2>ADD 2 NUMBERS</h2>
+            <h1 id="question"></h1>
+            <input type="number" id="user-answer" name="" placeholder="Enter Your Answer Here">
+            <p id="feedback"></p>
+            <button class="btn_practice" onclick="checkAnswer()"><a href="#">Check Answer</a></button>
+            <button class="btn_practice" onclick="displayRandomQA()"><a href="#">Get Another</a></button>
+        </div>
+
+        <script src="script.js"></script>
     </div>
 
-    <div id="qa-container">
-        <h2 id="question"></h2>
-        <input type="number" id="user-answer" placeholder="Enter your answer" />
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="feedback"></p>
-        <button onclick="displayRandomQA()">Get Another</button>
-    </div>
 
-    <script src="script.js"></script>
-
-</main>
+</div>
 </body>
 
-<aside> <!-- Menu on the side -->
-    <p>
-    <ol>
-        <h2> Lecture Notes </h2>
-        <li><a href="addnotes.html"></a> Addition </li>
-        <li> Subtraction </li>
-        <li> Multiplication </li>
-        <li> Division </li>
-    </ol>
-    </p>
-</aside>
 
 <footer>
     <p> CONTACT US </p>
 </footer>
 
 </html>
+
+
+

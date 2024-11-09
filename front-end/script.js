@@ -23,7 +23,7 @@ function displayRandomQA() {
     currentAnswer = answer;
 
     // Display the question and clear previous feedback/input
-    document.getElementById("question").textContent = `Q: ${question}`;
+    document.getElementById("question").textContent = `${question}`;
     document.getElementById("user-answer").value = "";
     document.getElementById("feedback").textContent = "";
 }
