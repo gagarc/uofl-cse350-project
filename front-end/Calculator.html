@@ -1,8 +1,11 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head> <!-- Name of tab -->
-   
-	<title>JavaScript Calculator</title> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Link to the .css file-->
+	<title>Calculator</title>
     
     <script src= 
 "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
@@ -19,170 +22,179 @@
 </head>
 
 <body>
-<header id="mainheader">
-    <h1><a href="index.html"> coolmathgames.com</a></h1> <!-- href is used to link -->
-</header>
+<div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <img src="img/logo.png" height="75px" width="75px">
+            <div class="logo"> Louie Learns Math</div>
+        </div>
 
-<nav id="mainnavbar">     <!--Horizontal navigation bar-->
-    <!--List of elements-->
-    <ul>
-        <li><a href="askprofessor.html"> Ask Professor </a></li>
-        <li><a href="practice.html"> Practice </a></li>
-        <li><a href="calculator.html"> Calculator </a></li>
-        <li><a href="quiz.html"> Quiz </a></li>
-    </ul>
-        
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="Calculator.html">CALCULATOR</a></li>
+                <li>
+                    <a href="#">LECTURES</a>
+                    <ul class="dropdown">
+                        <li><a href="addnotes.html"> ADDITION</a></li>
+                        <li><a href="subnotes.html"> SUBTRACTION</a></li>
+                        <li><a href="mulnotes.html"> MULTIPLICATION</a></li>
+                        <li><a href="divnotes.html"> DIVISION</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PRACTICE</a>
+                    <ul class="dropdown">
+                        <li><a href="addition.html"> ADDITION</a></li>
+                        <li><a href="subtraction.html"> SUBTRACTION</a></li>
+                        <li><a href="multiplication.html"> MULTIPLICATION</a></li>
+                        <li><a href="division.html"> DIVISION</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">QUIZ</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+        </div>
 
-    <!--Search bar-->
-    <form>
-        <input type="search" name="q" placeholder="Search" />
-        <input type="submit" value="Find" />
-    </form>
-</nav>
-<html> 
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Search...">
+            <a href="#"> <button class="btn_search"> Search </button> </a>
+        </div>
 
-<head> 
-	<title>HTML Calculator</title> 
+    </div>
 
-	<!-- For styling -->
-	<style> 
-		table { 
-			border: 10px solid red;
-			margin-left: auto; 
-			margin-right: auto; 
-            background-color: black;
-		} 
-		
-		input[type="button"] { 
-			width: 100%; 
-			padding: 15px 40px; 
-			background-color: red; 
-			color: white; 
-			font-size: 35px; 
-			font-weight: bold; 
-			border-color: black; 
-			border-radius: 0px; 
-		} 
-		
-		input[type="text"] { 
-			padding: 20px 30px; 
-			font-size: 24px; 
-			font-weight: bold; 
-			border: none; 
-			border-radius: 5px; 
-			border: 2px solid red; 
-		} 
-	</style> 
-	
-		
-</head> 
+    <div class="content">
 
-<body> 
+        <table id="calcu">
+            <tr>
 
-	<!-- Create table -->
-	<table id="calcu"> 
-		<tr> 
-			
-            <td colspan="3"><input type="text" id="result"></td> 
-            <td><input type="button" value="c" onclick="clr()" /> </td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="1" onclick="dis('1')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="2" onclick="dis('2')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="3" onclick="dis('3')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="/" onclick="dis('/')"
-                        onkeydown="show(event)"> </td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="4" onclick="dis('4')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="5" onclick="dis('5')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="6" onclick="dis('6')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="*" onclick="dis('*')"
-                        onkeydown="show(event)"> </td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="7" onclick="dis('7')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="8" onclick="dis('8')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="9" onclick="dis('9')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="-" onclick="dis('-')"
-                        onkeydown="show(event)"> </td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="0" onclick="dis('0')"
-                        onkeydown="show(event)"> </td> 
-            <td><input type="button" value="." onclick="dis('.')"
-                        onkeydown="show(event)"> </td> 
-            
-            <!-- solve function call function solve to evaluate value -->
-            <td><input type="button" value="=" onclick="solve()"> </td> 
-  
-            <td><input type="button" value="+" onclick="dis('+')"
-                        onkeydown="show(event)"> </td>
-		</tr> 
-	</table> 
-	<script> 
-        // Function that display value 
-        function dis(val) { 
-            document.getElementById("result").value += val 
-        } 
-  
-        function show(event) { 
-            if (event.key == '0' || event.key == '1' 
-                || event.key == '2' || event.key == '3' 
-                || event.key == '4' || event.key == '5' 
-                || event.key == '6' || event.key == '7' 
-                || event.key == '8' || event.key == '9' 
-                || event.key == '+' || event.key == '-' 
-                || event.key == '*' || event.key == '/') 
-                document.getElementById("result").value += event.key; 
-        } 
-  
-        var cal = document.getElementById("calcu"); 
-        cal.onkeyup = function (event) { 
-            if (event.keyCode === 13) { 
-                console.log("Enter"); 
-                let x = document.getElementById("result").value 
-                console.log(x); 
-                solve(); 
-            } 
-        } 
-  
-        // Function that evaluates the digit and return result 
-        function solve() { 
-            let x = document.getElementById("result").value 
-            let y = math.evaluate(x) 
-            document.getElementById("result").value = y 
-        } 
-  
-        // Function that clear the display 
-        function clr() { 
-            document.getElementById("result").value = "" 
-        } 
-    </script> 
-</body> 
-<aside> <!-- Menu on the side -->
-	<p>
-	<ol>
-		<li> item </li>
-		<li> item </li>
-		<li> item </li>
-	</ol>
-	</p>
-</aside>
-</main>
+                <td colspan="3"><input type="text" id="result"></td>
+                <td><input type="button" value="c" onclick="clr()" /> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="dis('1')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="2" onclick="dis('2')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="3" onclick="dis('3')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="/" onclick="dis('/')"
+                           onkeydown="show(event)"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="dis('4')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="5" onclick="dis('5')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="6" onclick="dis('6')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="*" onclick="dis('*')"
+                           onkeydown="show(event)"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="dis('7')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="8" onclick="dis('8')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="9" onclick="dis('9')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="-" onclick="dis('-')"
+                           onkeydown="show(event)"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="dis('0')"
+                           onkeydown="show(event)"> </td>
+                <td><input type="button" value="." onclick="dis('.')"
+                           onkeydown="show(event)"> </td>
 
-<footer>
-<p> CONTACT US </p>
-</footer>
+                <!-- solve function call function solve to evaluate value -->
+                <td><input type="button" value="=" onclick="solve()"> </td>
+
+                <td><input type="button" value="+" onclick="dis('+')"
+                           onkeydown="show(event)"> </td>
+            </tr>
+        </table>
+
+        <style>
+            table {
+                border: 10px solid rgb(184, 55, 55);
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                background: rgba(0, 0, 0, 0.85);
+                border-radius: 10px;
+            }
+
+            input[type="button"] {
+                width: 100%;
+                padding: 15px 40px;
+                background-color: rgba(253, 97, 97, 0.65);
+                color: white;
+                font-size: 35px;
+                font-weight: bold;
+                border-color: black;
+                border-radius: 10px;
+            }
+
+            input[type="text"] {
+                padding: 20px 30px;
+                font-size: 24px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                border: 2px solid rgba(255, 255, 255, 0.55);
+                background-color: rgba(255, 255, 255, 0.55);
+            }
+        </style>
+
+        <script>
+            // Function that display value
+            function dis(val) {
+                document.getElementById("result").value += val
+            }
+
+            function show(event) {
+                if (event.key == '0' || event.key == '1'
+                    || event.key == '2' || event.key == '3'
+                    || event.key == '4' || event.key == '5'
+                    || event.key == '6' || event.key == '7'
+                    || event.key == '8' || event.key == '9'
+                    || event.key == '+' || event.key == '-'
+                    || event.key == '*' || event.key == '/')
+                    document.getElementById("result").value += event.key;
+            }
+
+            var cal = document.getElementById("calcu");
+            cal.onkeyup = function (event) {
+                if (event.keyCode === 13) {
+                    console.log("Enter");
+                    let x = document.getElementById("result").value
+                    console.log(x);
+                    solve();
+                }
+            }
+
+            // Function that evaluates the digit and return result
+            function solve() {
+                let x = document.getElementById("result").value
+                let y = math.evaluate(x)
+                document.getElementById("result").value = y
+            }
+
+            // Function that clear the display
+            function clr() {
+                document.getElementById("result").value = ""
+            }
+        </script>
+    </div>
+</div>
 </body>
 
-</html> 
+
+<footer>
+    <p> CONTACT US </p>
+</footer>
+
+</html>
+
+

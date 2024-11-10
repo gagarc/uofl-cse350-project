@@ -35,7 +35,7 @@
 }
 
 .menu{
-    width: 1000px;
+    width: 750px;
     float: left;
     height: 70px;
     padding-left: 200px;
@@ -44,14 +44,13 @@
 ul{
     display: flex;
     float: left;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 ul li{
     list-style: none;
-    margin-left: 62px;
+    margin-left: 30px;
     margin-top: 30px;
     font-size: 14px;
     position: relative;
@@ -102,14 +101,14 @@ ul li ul.dropdown li a:hover {
 }
 
 .search{
-    width: 330px;
+    width: 225px;
     float: left;
     margin-top: 0.3% ;
 }
 
 .srch{
     font-family: 'Times New Roman';
-    width: 200px;
+    width: 150px;
     height: 40px;
     background: white;
     border: 1px solid rgb(184, 55, 55);
@@ -124,7 +123,7 @@ ul li ul.dropdown li a:hover {
 }
 
 .btn_search{
-    width: 100px;
+    width: 75px;
     height: 40px;
     background: rgb(184, 55, 55);
     border: 2px solid rgb(184, 55, 55);
@@ -181,7 +180,7 @@ ul li ul.dropdown li a:hover {
 .form{
     width: 300px;
     height: 275px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    background: rgba(0,0,0,0.8);
     position: absolute;
     top: -20px;
     left: 870px;
@@ -292,5 +291,56 @@ ul li ul.dropdown li a:hover {
     font-weight: bold;
 }
 
+.box {
+    width: 1200px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
 
+.box .box_light {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(255, 246, 246, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: auto;
+    margin: 10px;
+}
 
+.box h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: indianred;
+    letter-spacing: 2px;
+}
+
+.box h2 {
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.box p{
+    font-family: 'Arial';
+    font-size: 20px;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.box ol{
+    padding-left: 40px;
+}
+
+.box ol li{
+    font-family: 'Arial';
+    font-size: 20px;
+    padding: 20px;
+    letter-spacing: 2px;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!--Link to the .css file-->
-    <title> Louie Learns Math </title>
+    <title> Louie Learn Math </title>
 </head>
 
 <body>
@@ -53,22 +53,26 @@
     </div>
 
     <div class="content">
-        <h1>Learn math with <br><span>Louie the Cardinal</span></h1>
-        <p class="par">Welcome to Louie Learns Math! Sharpen yout math skills with Louie<br>
-            the Cardinal, the Univerisity of Louisville mascot. This educational <br>
-            e-learn platform will allow middle schoolers to practice addition, <br>
-            subtraction, division and multiplication.
+        <h1>Learn multiplication with <br><span>Louie the Cardinal</span></h1>
+        <p class="par">Welcome to Multiplication Practice Problems! After reading the lecture<br>
+            notes corresponding to this module, you learned the steps how to multiply 2  <br>
+            numbers. You are allowed to check your answers and generate as many questions as you <br>
+            need to practice and learn. Have fun!
         </p>
 
-        <div class="form">
-            <h2>QUESTION OF THE DAY</h2>
+        <div class="form" id="qa-container">
+            <h2>MULTIPLY 2 NUMBERS</h2>
             <h1 id="question"></h1>
-            <input name="" placeholder="Enter Your Answer Here">
-            <button class="btn_home" onclick="checkAnswer()"><a href="#">Check Answer</a></button>
+            <input type="number" id="user-answer" name="" placeholder="Enter Your Answer Here">
+            <p id="feedback"></p>
+            <button class="btn_practice" onclick="checkAnswer()"><a href="#">Check Answer</a></button>
+            <button class="btn_practice" onclick="displayRandomQA()"><a href="#">Get Another</a></button>
         </div>
 
         <script src="script.js"></script>
     </div>
+
+
 </div>
 </body>
 
@@ -78,3 +82,6 @@
 </footer>
 
 </html>
+
+
+
