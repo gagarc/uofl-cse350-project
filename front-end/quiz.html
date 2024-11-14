@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Name of tab -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Link to the .css file-->
+    <title> Louie Learn Math </title>
+</head>
+
+<body onload="createBox(10)">
+<div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <img src="img/logo.png" height="75px" width="75px">
+            <div class="logo"> Louie Learns Math</div>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="Calculator.html">CALCULATOR</a></li>
+                <li>
+                    <a href="#">LECTURES</a>
+                    <ul class="dropdown">
+                        <li><a href="addnotes.html"> ADDITION</a></li>
+                        <li><a href="subnotes.html"> SUBTRACTION</a></li>
+                        <li><a href="mulnotes.html"> MULTIPLICATION</a></li>
+                        <li><a href="divnotes.html"> DIVISION</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PRACTICE</a>
+                    <ul class="dropdown">
+                        <li><a href="addition.html"> ADDITION</a></li>
+                        <li><a href="subtraction.html"> SUBTRACTION</a></li>
+                        <li><a href="multiplication.html"> MULTIPLICATION</a></li>
+                        <li><a href="division.html"> DIVISION</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">QUIZ</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <div class="content" id="quiz-content">
+        <script src="quiz.js"></script>
+    </div>
+
+
+</div>
+</body>
+
+
+<footer>
+    <p> CONTACT US </p>
+</footer>
+
+</html>
