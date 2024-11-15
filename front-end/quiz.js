@@ -1,6 +1,5 @@
 const quiz_content = document.getElementById("quiz-content");
-let q_nodes = [] ,question_h2
-let questionList = []
+let q_nodes = [] ,question_h2, questionList = [], answers = []
 let filepath
 
 document.getElementById('add_btn').onclick = function() {quizType('add')}
@@ -38,11 +37,14 @@ function createQuiz(){
             qa.id = "question";
             qa.textContent = question
             container.appendChild(qa);
+
+            //append answer to list
+            answers[i] = answer
     
             // Create and append the <input> element
             const input = document.createElement("input");
             input.type = "number";
-            input.id = "user-answer";
+            input.id = "user-answer" + i;
             input.placeholder = "Enter Your Answer Here";
             container.appendChild(input);
     
@@ -61,7 +63,6 @@ function createQuiz(){
     } else {
         console.log("Question list not loaded yet.");
     }
-
 
 };
 
@@ -111,7 +112,7 @@ function quizType(qtype) {
         case 'add':
             loadQuestions('add')
             break;
-        case 'sub':
+        case 'sub':condition
             loadQuestions('sub')
             break
         case 'mul':
@@ -124,5 +125,25 @@ function quizType(qtype) {
             break;
     }
     
+
+}
+
+function submitQA() {
+    console.log("submitted")
+    let num_correct = 0
+    for (let i = 0; i < q_nodes.length; i++) {
+        if (answers[i] == parseInt(document.getElementById("user-answer" + i).value.trim())) {
+            num_correct++
+            
+        }
+    }
+    console.log(num_correct)
+    while (quiz_content.firstChild) {
+        quiz_content.removeChild(quiz_content.firstChild)
+    }
+    //make an element to display quiz score and then do that
+    const score = document.createElement("h1")
+    score.textContent = num_correct + "/" + q_nodes.length + " correct"
+    quiz_content.appendChild(score)
 
 }
