@@ -3,6 +3,11 @@ let q_nodes = [] ,question_h2
 let questionList = []
 let filepath
 
+document.getElementById('add_btn').onclick = function() {quizType('add')}
+document.getElementById('sub_btn').onclick = function() {quizType('sub')}
+document.getElementById('mul_btn').onclick = function() {quizType('mul')}
+document.getElementById('div_btn').onclick = function() {quizType('div')}
+
 
 function createQuiz(){
 
@@ -21,9 +26,6 @@ function createQuiz(){
                 
             // Create and append the <h2> element
             const heading = document.createElement("h2");
-    
-            question_h2 = "ADD 2 NUMBERS";
-    
             heading.textContent = question_h2;
             container.appendChild(heading);
     
@@ -68,9 +70,11 @@ async function loadQuestions(qtype) {
     switch (qtype) {
         case 'add':
             filepath = 'datasets/addition.json'
+            question_h2 = "ADD 2 NUMBERS";
             break;
         case 'sub':
             filepath = 'datasets/subtraction.json'
+            question_h2 = "SUBTRACT 2 NUMBERS";
             break
         case 'mul':
             filepath = 'datasets/multiplication.json'
@@ -94,4 +98,31 @@ async function loadQuestions(qtype) {
         console.error("Failed to load JSON file:", error);
     }
     //change text above question based on quiz type
+}
+
+
+
+function quizType(qtype) {
+    while (quiz_content.firstChild) {
+        quiz_content.removeChild(quiz_content.firstChild)
+    }
+   
+    switch (qtype) {
+        case 'add':
+            loadQuestions('add')
+            break;
+        case 'sub':
+            loadQuestions('sub')
+            break
+        case 'mul':
+            loadQuestions('mul')
+            break
+        case 'div':
+            loadQuestions('div')
+            break
+        default:
+            break;
+    }
+    
+
 }
