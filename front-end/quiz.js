@@ -15,12 +15,15 @@ function createQuiz(){
 
     if (questionList) {
         console.log("Question list is ready to be used:", questionList);
-        
+
+        const gridContainer = document.createElement("div");
+        gridContainer.className = "grid_container_qz";
+        quiz_content.appendChild(gridContainer);
+
         for (let i = 0; i < qnum; i++) {
-        
 
             const container = document.createElement("div");
-            container.className = "box";
+            container.className = "box_qz";
             container.id = "qa-container" + i;
                 
             // Create and append the <h2> element
@@ -35,11 +38,11 @@ function createQuiz(){
             // Create and append the <h1> element
             const qa = document.createElement("h1");
             qa.id = "question";
-            qa.textContent = question
+            qa.textContent = question;
             container.appendChild(qa);
 
             //append answer to list
-            answers[i] = answer
+            answers[i] = answer;
     
             // Create and append the <input> element
             const input = document.createElement("input");
@@ -53,13 +56,13 @@ function createQuiz(){
             feedback.id = "feedback";
             container.appendChild(feedback);
     
-            q_nodes.push(container)
+            q_nodes.push(container);
     
             // Append the container to the body (or any other element you want)
-            quiz_content.appendChild(container);
-            console.log(q_nodes[i].id)
+            gridContainer.appendChild(container);
+            console.log(q_nodes[i].id);
             
-        };
+        }
     } else {
         console.log("Question list not loaded yet.");
     }
@@ -70,18 +73,20 @@ async function loadQuestions(qtype) {
 
     switch (qtype) {
         case 'add':
-            filepath = 'datasets/addition.json'
+            filepath = 'datasets/addition.json';
             question_h2 = "ADD 2 NUMBERS";
             break;
         case 'sub':
-            filepath = 'datasets/subtraction.json'
+            filepath = 'datasets/subtraction.json';
             question_h2 = "SUBTRACT 2 NUMBERS";
             break
         case 'mul':
-            filepath = 'datasets/multiplication.json'
+            filepath = 'datasets/multiplication.json';
+            question_h2 = "MULTIPLY 2 NUMBERS";
             break
         case 'div':
-            filepath = 'datasets/division.json'
+            filepath = 'datasets/division.json';
+            question_h2 = "DIVIDE 2 NUMBERS";
             break
         default:
             break;
@@ -112,7 +117,7 @@ function quizType(qtype) {
         case 'add':
             loadQuestions('add')
             break;
-        case 'sub':condition
+        case 'sub':
             loadQuestions('sub')
             break
         case 'mul':

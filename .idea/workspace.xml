@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="css improvements for home page">
-      <change afterPath="$PROJECT_DIR$/front-end/division.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/multiplication.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/subtraction.html" afterDir="false" />
+    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="calculator style&#10;cleaning subtraction dataset&#10;add function to display random subtraction question and check answer">
+      <change afterPath="$PROJECT_DIR$/front-end/aboutus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/divnotes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/alba.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/mason.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/mulnotes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/subnotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_2024_11_24_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_2024_11_24_AM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2024_1_30_PM_[Changes]/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2024_1_30_PM_[Changes]/louie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2024_1_30_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2024_1_30_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/Calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/addition.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/addition.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/addnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/addnotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/datasets/subtraction.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/datasets/subtraction.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,9 +66,13 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.Calculator.html.executor": "Run",
+    "JavaScript Debug.aboutus.html.executor": "Run",
     "JavaScript Debug.addition.html.executor": "Run",
     "JavaScript Debug.addnotes.html.executor": "Run",
+    "JavaScript Debug.divnotes.html.executor": "Run",
     "JavaScript Debug.home.html.executor": "Run",
+    "JavaScript Debug.mulnotes.html.executor": "Run",
+    "JavaScript Debug.quiz.html.executor": "Run",
     "JavaScript Debug.randomQuestionPair.html.executor": "Run",
     "JavaScript Debug.subtraction.html.executor": "Run",
     "Node.js.script.js.executor": "Run",
@@ -120,6 +129,13 @@
       <workItem from="1731161400803" duration="9718000" />
       <workItem from="1731181348143" duration="3030000" />
       <workItem from="1731190233464" duration="6779000" />
+      <workItem from="1731198992719" duration="135000" />
+      <workItem from="1731258729449" duration="665000" />
+      <workItem from="1731361278128" duration="664000" />
+      <workItem from="1731714627672" duration="1085000" />
+      <workItem from="1731969700128" duration="2329000" />
+      <workItem from="1731979289484" duration="3523000" />
+      <workItem from="1732558752309" duration="7309000" />
     </task>
     <task id="LOCAL-00001" summary="add home and addition html files + css file">
       <option name="closed" value="true" />
@@ -193,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731179396897</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="calculator style&#10;cleaning subtraction dataset&#10;add function to display random subtraction question and check answer">
+      <option name="closed" value="true" />
+      <created>1731199086973</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731199086973</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +255,7 @@
     <MESSAGE value="first draft addition notes" />
     <MESSAGE value="some images upload" />
     <MESSAGE value="css improvements for home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="css improvements for home page" />
+    <MESSAGE value="calculator style&#10;cleaning subtraction dataset&#10;add function to display random subtraction question and check answer" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculator style&#10;cleaning subtraction dataset&#10;add function to display random subtraction question and check answer" />
   </component>
 </project>
