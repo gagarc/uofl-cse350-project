@@ -11,7 +11,7 @@ let currentAnswer = null; // Holds the correct answer for the current question
 
 function loadAddition(){
     // Fetch JSON data
-    fetch("datasets/addition.json")
+    fetch("../datasets/addition.json")
         .then(response => response.json())
         .then(data => {
             additionList = data;
@@ -41,7 +41,7 @@ function displayRandomQA_add() {
 
 function loadSubtraction(){
     // Fetch JSON data
-    fetch("datasets/subtraction.json")
+    fetch("../datasets/subtraction.json")
         .then(response => response.json())
         .then(data => {
             subtractionList = data;
@@ -70,7 +70,7 @@ function displayRandomQA_sub() {
 
 function loadMultiplication(){
     // Fetch JSON data
-    fetch("datasets/multiplication.json")
+    fetch("../datasets/multiplication.json")
         .then(response => response.json())
         .then(data => {
             multiplicationList = data;
@@ -98,7 +98,7 @@ function displayRandomQA_mult() {
 
 function loadDivision(){
     // Fetch JSON data
-    fetch("datasets/division.json")
+    fetch("../datasets/division.json")
         .then(response => response.json())
         .then(data => {
             divisionList = data;
