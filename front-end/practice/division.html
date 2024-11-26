@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <!-- Name of tab -->
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!--Link to the .css file-->
+    <link rel="stylesheet" href="../styles.css">
     <title> Louie Learn Math </title>
 </head>
 
-<body>
+<body onload="loadDivision()">
 <div class="main">
     <div class="navbar">
         <div class="icon">
-            <img src="img/logo.png" height="75px" width="75px">
+            <img src="../img/logo.png" height="75px" width="75px">
             <div class="logo"> Louie Learns Math</div>
         </div>
 
         <div class="menu">
             <ul>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="Calculator.html">CALCULATOR</a></li>
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="../Calculator.html">CALCULATOR</a></li>
                 <li>
                     <a href="#">LECTURES</a>
                     <ul class="dropdown">
-                        <li><a href="addnotes.html"> ADDITION</a></li>
-                        <li><a href="subnotes.html"> SUBTRACTION</a></li>
-                        <li><a href="mulnotes.html"> MULTIPLICATION</a></li>
-                        <li><a href="divnotes.html"> DIVISION</a></li>
+                        <li><a href="../lectures/addnotes.html"> ADDITION</a></li>
+                        <li><a href="../lectures/subnotes.html"> SUBTRACTION</a></li>
+                        <li><a href="../lectures/mulnotes.html"> MULTIPLICATION</a></li>
+                        <li><a href="../lectures/divnotes.html"> DIVISION</a></li>
                     </ul>
                 </li>
                 <li>
@@ -38,8 +38,8 @@
                         <li><a href="division.html"> DIVISION</a></li>
                     </ul>
                 </li>
-                <li><a href="quiz.html">QUIZ</a></li>
-                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="../quiz.html">QUIZ</a></li>
+                <li><a href="../aboutus.html">ABOUT US</a></li>
             </ul>
 
 
@@ -66,10 +66,10 @@
             <input type="number" id="user-answer" name="" placeholder="Enter Your Answer Here">
             <p id="feedback"></p>
             <button class="btn_practice" onclick="checkAnswer()"><a href="#">Check Answer</a></button>
-            <button class="btn_practice" onclick="displayRandomQA()"><a href="#">Get Another</a></button>
+            <button class="btn_practice" onclick="displayRandomQA_div()"><a href="#">Get Another</a></button>
         </div>
 
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
     </div>
 
 

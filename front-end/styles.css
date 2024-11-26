@@ -6,9 +6,11 @@
 .main{
     width: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7)50%,rgba(0,0,0,0.7)50%), url(img/louie.png);
+    background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 
 .navbar{
@@ -189,7 +191,7 @@ ul li ul.dropdown li a:hover {
     padding: 40px;
 }
 
-.form h2{
+.form h2, .boz_qz h2{
     width: 270px;
     font-family: Arial;
     text-align: center;
@@ -201,7 +203,7 @@ ul li ul.dropdown li a:hover {
     padding: 8px;
 }
 
-.form h1{
+.form h1, .box_qz h1{
     width: 270px;
     height: 35px;
     background: transparent;
@@ -216,14 +218,14 @@ ul li ul.dropdown li a:hover {
     font-family: sans-serif;
 }
 
-.form p{
+.form p, .box_qz p{
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
     padding-top: 10px;
 }
 
-.form input{
+.form input, .box_qz input{
     width: 270px;
     height: 35px;
     background: transparent;
@@ -269,6 +271,25 @@ ul li ul.dropdown li a:hover {
     font-weight: bold;
 }
 
+.btn_qtype {
+    width: 270px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(184, 55, 55);
+    transition: 0.4s ease;
+    font-weight: bold;
+}
+
+.btn_qtype:hover {
+    background: #ff9a9a;
+    color: #ff0000;
+}
+
 .btn_practice{
     width: 270px;
     height: 40px;
@@ -281,6 +302,7 @@ ul li ul.dropdown li a:hover {
     color: #fff;
     transition: 0.4s ease;
 }
+
 .btn_practice:hover{
     background: #fc6c6c;
     color: #ff0000;
@@ -301,7 +323,7 @@ ul li ul.dropdown li a:hover {
     padding-bottom: 10px;
 }
 
-.box .box_light {
+.box .box_light, .grid_container .inner_container{
     display: inline-block;
     padding: 20px;
     background-color: rgba(255, 246, 246, 0.5);
@@ -311,7 +333,7 @@ ul li ul.dropdown li a:hover {
     margin: 10px;
 }
 
-.box h1{
+.box h1, .grid_container .inner_container h1 {
     font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
@@ -320,14 +342,15 @@ ul li ul.dropdown li a:hover {
     letter-spacing: 2px;
 }
 
-.box h2 {
+.box h2, .grid_container .inner_container h2 {
     font-family: 'Times New Roman';
     font-size: 35px;
     padding: 20px;
     letter-spacing: 2px;
+    color: white;
 }
 
-.box p{
+.box p, .grid_container .inner_container p{
     font-family: 'Arial';
     font-size: 20px;
     padding: 20px;
@@ -343,4 +366,74 @@ ul li ul.dropdown li a:hover {
     font-size: 20px;
     padding: 20px;
     letter-spacing: 2px;
+}
+
+.grid_container{
+    display: grid;
+    background-color: rgba(0,0,0,0.8);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    justify-content: center;
+    align-content: start;
+    column-gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 10px;
+    grid-template-areas:
+    "image1 image1 image1 image1"
+    "text text text text";
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.text{
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid_container_qz {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px 270px;
+    max-width: fit-content;
+    max-height: fit-content;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.box_qz {
+    width: 270px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.btn_group{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 300px;
+    height: 275px;
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+}
+
+.grid_container .inner_container p{
+    font-family: 'Arial';
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
 }
