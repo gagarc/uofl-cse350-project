@@ -112,7 +112,7 @@ function quizType(qtype) {
         case 'add':
             loadQuestions('add')
             break;
-        case 'sub':condition
+        case 'sub':
             loadQuestions('sub')
             break
         case 'mul':
