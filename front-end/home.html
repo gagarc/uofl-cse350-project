@@ -8,7 +8,7 @@
     <title> Louie Learns Math </title>
 </head>
 
-<body>
+<body onload="displayQOTD()">
 <div class="main">
     <div class="navbar">
         <div class="icon">
@@ -63,11 +63,12 @@
         <div class="form">
             <h2>QUESTION OF THE DAY</h2>
             <h1 id="question"></h1>
-            <input name="" placeholder="Enter Your Answer Here">
+            <input type="number" id="user-answer" name="" placeholder="Enter Your Answer Here">
+            <p id="feedback"></p>
             <button class="btn_home" onclick="checkAnswer()"><a href="#">Check Answer</a></button>
         </div>
 
-        <script src="script.js"></script>
+        <script src="qotd.js"></script>
     </div>
 </div>
 </body>
