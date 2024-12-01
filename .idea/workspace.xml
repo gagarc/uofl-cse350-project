@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="calculator style&#10;cleaning subtraction dataset&#10;add function to display random subtraction question and check answer">
-      <change afterPath="$PROJECT_DIR$/front-end/aboutus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/divnotes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/img/alba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/img/mason.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/mulnotes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/subnotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_2024_11_24_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_2024_11_24_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2024_1_30_PM_[Changes]/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2024_1_30_PM_[Changes]/louie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2024_1_30_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2024_1_30_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="formatting of quiz page and filled about us with mason and alba">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/Calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/askprofessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/askprofessor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/lectures/addnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/lectures/addnotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/lectures/divnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/lectures/divnotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/lectures/mulnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/lectures/mulnotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/lectures/subnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/lectures/subnotes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,34 +56,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.Calculator.html.executor": "Run",
-    "JavaScript Debug.aboutus.html.executor": "Run",
-    "JavaScript Debug.addition.html.executor": "Run",
-    "JavaScript Debug.addnotes.html.executor": "Run",
-    "JavaScript Debug.divnotes.html.executor": "Run",
-    "JavaScript Debug.home.html.executor": "Run",
-    "JavaScript Debug.mulnotes.html.executor": "Run",
-    "JavaScript Debug.quiz.html.executor": "Run",
-    "JavaScript Debug.randomQuestionPair.html.executor": "Run",
-    "JavaScript Debug.subtraction.html.executor": "Run",
-    "Node.js.script.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Usuario/IdeaProjects/uofl-cse350-project/front-end",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.Calculator.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.aboutus.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.addition.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.addnotes.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.divnotes.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.home.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.mulnotes.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.quiz.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.randomQuestionPair.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.subtraction.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/IdeaProjects/uofl-cse350-project/front-end&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\IdeaProjects\uofl-cse350-project\front-end" />
@@ -135,7 +130,9 @@
       <workItem from="1731714627672" duration="1085000" />
       <workItem from="1731969700128" duration="2329000" />
       <workItem from="1731979289484" duration="3523000" />
-      <workItem from="1732558752309" duration="7309000" />
+      <workItem from="1732558752309" duration="7478000" />
+      <workItem from="1733022165783" duration="1138000" />
+      <workItem from="1733024385037" duration="380000" />
     </task>
     <task id="LOCAL-00001" summary="add home and addition html files + css file">
       <option name="closed" value="true" />
@@ -217,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731199086973</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="formatting of quiz page and filled about us with mason and alba">
+      <option name="closed" value="true" />
+      <created>1732568927513</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732568927513</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +261,7 @@
     <MESSAGE value="some images upload" />
     <MESSAGE value="css improvements for home page" />
     <MESSAGE value="calculator style&#10;cleaning subtraction dataset&#10;add function to display random subtraction question and check answer" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculator style&#10;cleaning subtraction dataset&#10;add function to display random subtraction question and check answer" />
+    <MESSAGE value="formatting of quiz page and filled about us with mason and alba" />
+    <option name="LAST_COMMIT_MESSAGE" value="formatting of quiz page and filled about us with mason and alba" />
   </component>
 </project>
