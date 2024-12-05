@@ -10,8 +10,8 @@ document.getElementById('div_btn').onclick = function() {quizType('div')}
 
 function createQuiz(){
 
-    qnum = 10
-
+    qnum = 10;
+    q_nodes = [];
 
     if (questionList) {
         console.log("Question list is ready to be used:", questionList);
