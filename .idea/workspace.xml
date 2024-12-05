@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="formatting of quiz page and filled about us with mason and alba">
+    <list default="true" id="108600bc-64f2-43fa-b43f-ddc251460345" name="Changes" comment="added footer">
+      <change afterPath="$PROJECT_DIR$/front-end/img/gerardo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/img/titus.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/Calculator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/askprofessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/askprofessor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/lectures/addnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/lectures/addnotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/lectures/divnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/lectures/divnotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/lectures/mulnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/lectures/mulnotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/lectures/subnotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/lectures/subnotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +126,9 @@
       <workItem from="1731979289484" duration="3523000" />
       <workItem from="1732558752309" duration="7478000" />
       <workItem from="1733022165783" duration="1138000" />
-      <workItem from="1733024385037" duration="380000" />
+      <workItem from="1733024385037" duration="718000" />
+      <workItem from="1733098685979" duration="292000" />
+      <workItem from="1733364773814" duration="886000" />
     </task>
     <task id="LOCAL-00001" summary="add home and addition html files + css file">
       <option name="closed" value="true" />
@@ -222,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732568927513</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added footer">
+      <option name="closed" value="true" />
+      <created>1733024983320</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733024983320</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +266,7 @@
     <MESSAGE value="css improvements for home page" />
     <MESSAGE value="calculator style&#10;cleaning subtraction dataset&#10;add function to display random subtraction question and check answer" />
     <MESSAGE value="formatting of quiz page and filled about us with mason and alba" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatting of quiz page and filled about us with mason and alba" />
+    <MESSAGE value="added footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="added footer" />
   </component>
 </project>
